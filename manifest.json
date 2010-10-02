@@ -9,7 +9,7 @@
   "content_scripts": [
     {
       "matches": ["http://*.youtube.com/*"],
-      "js": ["jquery-1.4.2.min.js", "youtube.js"]
+      "js": ["jquery-1.4.2.min.js", "md5.js", "youtube.js"]
     }
   ]
 }
