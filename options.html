@@ -1,0 +1,41 @@
+<html>
+	<head>
+	
+	</head>
+	<body onload="get_settings()">
+		<h2>Youtube scrobbler options</h2>
+
+		<script type="text/javascript">
+			function save_settings()
+			{
+				localStorage['lf_username'] = document.getElementById('lf_username').value;
+				localStorage['lf_password'] = document.getElementById('lf_password').value;
+				
+				return false;
+			}
+	
+			function get_settings()
+			{
+				username = localStorage['lf_username'];
+				password = localStorage['lf_password'];
+		
+				if(username)
+				{
+					document.getElementById('lf_username').value = username;
+				}
+		
+				if(password)
+				{
+					document.getElementById('lf_password').value = password;
+				}
+			}
+		</script>
+
+		<form action="#" method="get">
+			<input type="text" id="lf_username" name="lf_username" />
+			<input type="password" id="lf_password" name="lf_password" />
+	
+			<input type="button" name="save" value="Save settings" onclick="return save_settings();"/>
+		</form>
+	</body>
+</html>

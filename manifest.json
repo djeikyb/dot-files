@@ -2,6 +2,7 @@
   "name": "Youtube Scrobbler",
   "version": "0.1",
   "description": "Scrobbles songs included in youtube videos",
+  "options_page": "options.html",
   "permissions": [
     "http://*.youtube.com/"
   ],
