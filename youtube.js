@@ -11,9 +11,19 @@ $(document).ready(function() {
 		// clean song_name, need to trim it and remove the trailing dash
 		song_name = song_name.substring(3).trim()
 		
-		console.log(artist_name);
-		console.log(song_name);
+		/*console.log(artist_name);
+		console.log(song_name);*/
+		
+		settings = false;
+		// TODO: add event handler to make the scrobble automatic
+		
+		chrome.extension.sendRequest(
+			{
+				name: "scrobble",
+				artist: artist_name,
+				song: song_name
+			},
+			function(response) {}
+		);
 	}
-	
-	// if no youtube detected song, try to grab it from the title?
 });
