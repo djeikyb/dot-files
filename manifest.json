@@ -3,13 +3,16 @@
   "version": "0.1",
   "description": "Scrobbles songs included in youtube videos",
   "options_page": "options.html",
+  "background_page": "background.html",
   "permissions": [
-    "http://*.youtube.com/"
+  	"tabs",
+    "http://*.youtube.com/*",
+    "http://*.audioscrobbler.com/*"
   ],
   "content_scripts": [
     {
       "matches": ["http://*.youtube.com/*"],
-      "js": ["jquery-1.4.2.min.js", "md5.js", "youtube.js"]
+      "js": ["jquery-1.4.2.min.js", "youtube.js"]
     }
   ]
 }
