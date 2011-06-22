@@ -15,7 +15,7 @@ alias pgrep='pgrep -l'
 alias rxvt='urxvt'
 alias tmux="tmux -2"
 alias top='htop'
-alias which='alias | /usr/local/bin/which --tty-only --read-alias --show-dot --show-tilde'
+alias which='alias | "which" --tty-only --read-alias --show-dot --show-tilde'
 #}}} -- GLOBAL
 
 #-- HOST SPECIFIC {{{
@@ -33,6 +33,7 @@ case "$(hostname)" in
         alias xterm='xterm -fa inconsolata -geometry 106x43'
         ;;
     clyde)
+        alias mpc='"mpc" --host 10.1.1.22 --port 6600'
         alias locate='"locate" -i'
         ;;
 esac
