@@ -1,0 +1,3 @@
+[alias]
+    logg = log --pretty=oneline
+    stat = status --short --branch --untracked-files=no
