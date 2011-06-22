@@ -35,4 +35,5 @@ case "$(hostname)" in
     clyde)
         alias locate='"locate" -i'
         ;;
+esac
 #}}} -- HOST SPECIFIC
