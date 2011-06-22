@@ -24,14 +24,14 @@ set fdm=marker          " use fold markers ie {{{ }}}
 colorscheme zenburn
 
 " show invisibles:
-"set list
-set listchars=trail:·,tab:→\ ,
+set list
+set listchars=trail:·
 
 " tabs:
-set tabstop=2
-set softtabstop=0       " Turned off with 0
-set shiftwidth=2        " Used for autoindent, and << and >>
-set noexpandtab         " Don't expand tabs to spaces
+set tabstop=4           " (ts)
+set softtabstop=0       " (sts) Turned off with 0
+set shiftwidth=4        " (sw)  Used for autoindent, and << and >>
+set expandtab           " (et)  Expand tabs to spaces
 
 " GVIM settings
 set guioptions-=T        " Disable toolbar
