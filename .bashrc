@@ -1,6 +1,7 @@
 set -o vi   # vi bindings for shell
 [ -r ~/.bash_aliases ] && . $HOME/.bash_aliases
 if test "$TERM" = rxvt-256color; then TERM='rxvt-unicode'; fi
+if test "$TERM" = rxvt-unicode-256color; then TERM='rxvt-unicode'; fi
 PATH=$HOME/bin:$PATH
 # don't put duplicate lines in the history. See bash(1) for more options
 export HISTCONTROL=ignoredups
