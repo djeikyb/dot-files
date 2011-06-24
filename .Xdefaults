@@ -2,7 +2,7 @@
 
 
 urxvt*font: xft:Inconsolata:style=Medium:pixelsize=16:antialias=true
-urxvt*boldFont: xft:Consolas:style=Regular:pixelsize=15
+#urxvt*boldFont: xft:Consolas:style=Regular:pixelsize=15
 *scrollBar: false
 *jumpScroll: true
 !URxvt*inheritPixmap: true
