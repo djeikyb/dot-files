@@ -7,7 +7,6 @@ alias grep='"grep" -i --color=auto'
 alias less='less -i'
 alias man='man -i'
 # misc system
-alias cal='"ncal" -bM3'   # b=cal style. M=monday first. 3=3 months
 alias df='"df" -h'
 alias du='"du" -bh'
 alias ls='"ls" --color=auto -F'
@@ -22,6 +21,7 @@ alias which='alias | "which" --tty-only --read-alias --show-dot --show-tilde'
 case "$(hostname)" in
     daedalus)
         # etc
+        alias cal='"ncal" -bM3'   # b=cal style. M=monday first. 3=3 months
         alias feh='feh -F'
         alias slocate='slocate -i'
         alias mutt='mutt -F ~/.config/mutt/muttrc'
@@ -33,6 +33,7 @@ case "$(hostname)" in
         alias xterm='xterm -fa inconsolata -geometry 106x43'
         ;;
     clyde)
+        alias cal='"cal" -m3'
         alias mpc='"mpc" --host 10.1.1.22 --port 6600'
         alias locate='"locate" -i'
         ;;
