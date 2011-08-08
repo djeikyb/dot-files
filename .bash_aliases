@@ -38,7 +38,7 @@ case "$(hostname)" in
         alias cal='"cal" -m3'
         alias mpc='"mpc" --host 10.1.1.22 --port 6600'
         alias locate='"locate" -i'  # case insens
-        alias python='"python2"'
+        #alias python=''python2"'
         ;;
 #}}} -- clyde SPECIFIC
 esac
