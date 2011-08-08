@@ -1,0 +1,5 @@
+event_command = /home/jake/.config/pianobar/scrobble.py
+act_voldown = -
+act_volup = =
+act_songlove = +
+act_songban = _
