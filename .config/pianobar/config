@@ -3,3 +3,4 @@ act_voldown = -
 act_volup = =
 act_songlove = +
 act_songban = _
+act_managestation = F1
