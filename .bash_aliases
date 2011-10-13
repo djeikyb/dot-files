@@ -10,7 +10,7 @@ alias man='man -i'
 alias df='"df" -h'
 alias du='"du" -bh'
 alias ls='"ls" --color=auto -F'
-alias pgrep='pgrep -l'
+alias pgrep='pgrep -fl'
 alias rxvt='urxvt'
 alias tmux="tmux -2"
 alias top='htop'
