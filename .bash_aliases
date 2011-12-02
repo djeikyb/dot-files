@@ -18,8 +18,8 @@ alias which='alias | "which" --tty-only --read-alias --show-dot --show-tilde'
 #}}} -- GLOBAL
 
 #-- daedalus SPECIFIC {{{
-case "$(hostname)" in
-    daedalus)
+#case "$(hostname)" in
+#    daedalus)
         # etc
         alias cal='"ncal" -bM3'   # b=cal style. M=monday first. 3=3 months
         alias feh='feh --fullscreen'
@@ -31,14 +31,14 @@ case "$(hostname)" in
         #alias play='plaiter'
         alias plait='plait -l'
         alias xterm='xterm -fa inconsolata -geometry 106x43'
-        ;;
+#        ;;
 #}}} -- daedalus SPECIFIC
 #-- clyde SPECIFIC {{{
-    clyde)
+#    clyde)
         alias cal='"cal" -m3'
         alias mpc='"mpc" --host 10.1.1.22 --port 6600'
         alias locate='"locate" -i'  # case insens
         #alias python=''python2"'
-        ;;
+#        ;;
 #}}} -- clyde SPECIFIC
-esac
+#esac
