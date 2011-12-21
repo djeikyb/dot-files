@@ -1,10 +1,9 @@
 ! Comments start with !, C style #define statements can be used only if
 ! this file is processed with xrdb -merge $HOME/.Xresources
 
+! {{{ urxvt
 urxvt*font: xft:Inconsolata:style=Medium:pixelsize=16:antialias=true
 !urxvt*boldFont: xft:Consolas:style=Regular:pixelsize=15
-*scrollBar: false
-*jumpScroll: true
 !URxvt*inheritPixmap: true
 URxvt.internalBorder: 0
 ! URxvt.loginShell: true
@@ -16,10 +15,16 @@ URxvt.scrollBar: false
 URxvt.scrollTtyKeypress: true
 URxvt.scrollWithBuffer: true
 URxvt*urlLauncher: /opt/firefox/firefox
+! }}}
 
+! {{{ general
+*scrollBar: false
+*jumpScroll: true
+! }}}
 
-!! drop in Solarized colorscheme for Xresources/Xdefaults
+! {{{ colors
 
+! {{{ solarized
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
@@ -76,3 +81,6 @@ URxvt*urlLauncher: /opt/firefox/firefox
 !! white dark/light
 *color7:                S_base2
 *color15:               S_base3
+! }}}
+
+! }}}
