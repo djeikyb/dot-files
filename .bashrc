@@ -69,10 +69,11 @@ case "$(hostname)" in
 #    # }}} -- UBUNTU DEFAULTS
     ;;
     clyde)
-#    # CLYDE DEFAULTS -- {{{
-#        # Check for an interactive session
-#        [ -z "$PS1" ] && return
-#        PS1='[\u@\h \W]\$ '
-#    # }}} -- CLYDE DEFAULTS
+    # CLYDE DEFAULTS -- {{{
+        # Check for an interactive session
+        [ -z "$PS1" ] && return
+        PS1='[\u@\h \w]\$ '
+#        PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    # }}} -- CLYDE DEFAULTS
     ;;
 esac
