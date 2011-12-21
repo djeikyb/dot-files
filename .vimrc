@@ -21,7 +21,10 @@ set encoding=utf8
 set t_Co=256            " 256 colours
 set autoindent
 set fdm=marker          " use fold markers ie {{{ }}}
-colorscheme zenburn
+
+" Colours
+set background=dark
+colorscheme solarized
 
 " show invisibles:
 set list
