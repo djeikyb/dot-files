@@ -19,6 +19,6 @@ URxvt.scrollWithBuffer: true
 URxvt*urlLauncher: /opt/firefox/firefox
 
 !! COLORS !!
-!#include "/home/jake/.config/Xresources/zenburn"
-#include "/home/jake/.config/Xresources/solarized"
+#include "/home/jake/.config/Xresources/zenburn"
+!#include "/home/jake/.config/Xresources/solarized"
 !#include "/home/jake/.config/Xresources/orig"
