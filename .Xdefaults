@@ -83,4 +83,93 @@ URxvt*urlLauncher: /opt/firefox/firefox
 *color15:               S_base3
 ! }}}
 
+! {{{ Zenburn
+!! black + red
+!!urxvt*color0:     #3f3f3f
+!urxvt*color0:      #1E2320
+!urxvt*color1:      #705050
+!! green + yellow
+!urxvt*color2:      #60b48a
+!urxvt*color3:      #dfaf8f
+!! blue + purple
+!urxvt*color4:      #506070
+!urxvt*color5:      #dc8cc3
+!! cyan + white
+!urxvt*color6:      #8cd0d3
+!urxvt*color7:      #dcdccc
+!! bright-black + bright-red
+!urxvt*color8:      #709080
+!urxvt*color9:      #dca3a3
+!! bright-green + bright-yellow
+!urxvt*color10:     #c3bf9f
+!urxvt*color11:     #f0dfaf
+!! bright-blue + bright-purple
+!urxvt*color12:     #94bff3
+!urxvt*color13:     #ec93d3
+!! bright-cyan + bright-white
+!urxvt*color14:     #93e0e3
+!urxvt*color15:     #ffffff
+!       }}}
+
+! {{{ Some other theme
+!0      000     000
+!8      444     444
+!
+!1      C00     C00
+!9      F00     F00
+!
+!2      0C0     0C0
+!10     0F0     0F0
+!
+!3      CC0     CC0
+!11     FF0     FF0
+!
+!4      48B     48B
+!12     28F     28F
+!
+!5      C0C     C0C
+!13     F0F     F0F
+!
+!6      0CC     0CC
+!14     0FF     0FF
+!
+!7      DDD     DDD
+!15     FFF     FFF
+
+! }}}
+
+! {{{ Default colours
+! 0: black
+!*color0:  #000
+!*color8:  #444
+
+! 1: red
+!*color1:  #c00
+!*color9:  #f00
+
+! 2: green
+!*color2:  #0c0
+!*color10: #0f0
+
+! 3: yellow
+!*color3:  #cc0
+!*color11: #ff0
+
+! 4: blue
+!*color4:  #48b
+!*color12: #28f
+
+! 5: magenta
+!*color5:  #bb77a4
+!*color13: #bb77a4
+
+! 6: cyan
+!*color6:  #0cc
+!*color14: #0ff
+
+! 7: white
+!*color7:  #ddd
+!*color15: #fff
+! }}}
+
 ! }}}
