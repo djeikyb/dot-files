@@ -1,0 +1,31 @@
+! 0: black
+*color0:  #000
+*color8:  #444
+
+! 1: red
+*color1:  #c00
+*color9:  #f00
+
+! 2: green
+*color2:  #0c0
+*color10: #0f0
+
+! 3: yellow
+*color3:  #cc0
+*color11: #ff0
+
+! 4: blue
+*color4:  #48b
+*color12: #28f
+
+! 5: magenta
+*color5:  #bb77a4
+*color13: #bb77a4
+
+! 6: cyan
+*color6:  #0cc
+*color14: #0ff
+
+! 7: white
+*color7:  #ddd
+*color15: #fff
