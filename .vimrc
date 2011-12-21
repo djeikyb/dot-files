@@ -29,7 +29,7 @@ set listchars=trail:·
 
 " tabs:
 set tabstop=4           " (ts)
-set softtabstop=0       " (sts) Turned off with 0
+set softtabstop=4       " (sts) Turned off with 0
 set shiftwidth=4        " (sw)  Used for autoindent, and << and >>
 set expandtab           " (et)  Expand tabs to spaces
 
@@ -38,7 +38,7 @@ set guioptions-=T        " Disable toolbar
 set guioptions-=m        " Disable file menu
 
 syntax on
-au FileType * setl fo+=cro " enable auto comments
+"au FileType * setl fo+=cro " enable auto comments
 "hi Comment ctermfg=blue	" make comments blue
 
 let javascript_enable_domhtmlcss=1
