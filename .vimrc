@@ -24,7 +24,7 @@ set fdm=marker          " use fold markers ie {{{ }}}
 
 " Colours
 set background=dark
-colorscheme solarized
+colorscheme zenburn
 
 " show invisibles:
 set list
