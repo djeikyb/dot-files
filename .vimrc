@@ -28,7 +28,7 @@ colorscheme zenburn
 
 " show invisibles:
 set list
-set listchars=trail:·
+set listchars=tab:··,trail:·
 
 " tabs:
 set tabstop=4           " (ts)
