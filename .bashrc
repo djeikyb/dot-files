@@ -1,25 +1,19 @@
 set -o vi   # vi bindings for shell
 [ -r ~/.bash_aliases ] && . $HOME/.bash_aliases
-if test "$TERM" = rxvt-256color; then TERM='rxvt-unicode'; fi
-if test "$TERM" = rxvt-unicode-256color; then TERM='rxvt-unicode'; fi
+[ "$TERM" = rxvt-256color ] && TERM='rxvt-unicode'
+[ "$TERM" = rxvt-unicode-256color ] && TERM='rxvt-unicode'
 PATH=$HOME/bin:$PATH
-# don't put duplicate lines in the history. See bash(1) for more options
-export HISTCONTROL=ignoredups
-# ... and ignore same sucessive entries.
-export HISTCONTROL=ignoreboth
+HISTCONTROL=ignoreboth # ignore dups and "^ .*$"
 
-case "$(hostname)" in
-    daedalus)
-#    # UBUNTU DEFAULTS -- {{{ 
-#    # ~/.bashrc: executed by bash(1) for non-login shells.
-#    # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-#    # for examples
-#    # Set default editor
-#    export EDITOR="/usr/bin/editor"
-#    export VISUAL="$EDITOR"
+[ -n "$DISPLAY" ] && BROWSER="chromium --new-tab-page"
+
+# UBUNTU DEFAULTS -- {{{
+if [ "$(hostname)" = "daedalus" ]; then
+    export EDITOR="/usr/bin/editor"
+    export VISUAL="$EDITOR"
 #
 #    # If not running interactively, don't do anything
-#    [ -z "$PS1" ] && return
+    [ -z "$PS1" ] && return
 #
 #    # check the window size after each command and, if necessary,
 #    # update the values of LINES and COLUMNS.
@@ -61,19 +55,14 @@ case "$(hostname)" in
 #        ;;
 #    esac
 #
-#    # enable programmable completion features (you don't need to enable
-#    # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-#    # sources /etc/bash.bashrc).
-#		[ -r /etc/bash_completion ] && . /etc/bash_completion
-#
-#    # }}} -- UBUNTU DEFAULTS
-    ;;
-    clyde)
-    # CLYDE DEFAULTS -- {{{
-        # Check for an interactive session
-        [ -z "$PS1" ] && return
-        PS1='[\u@\h \w]\$ '
-#        PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-    # }}} -- CLYDE DEFAULTS
-    ;;
-esac
+    # enable programmable completion features (you don't need to enable
+    # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+    # sources /etc/bash.bashrc).
+    [ -r /etc/bash_completion ] && . /etc/bash_completion
+fi # }}} -- UBUNTU DEFAULTS
+
+# CLYDE DEFAULTS -- {{{
+if [ "$(hostname)" = "clyde" ]; then
+    PS1='[\u@\h \w]\$ '
+    [ -r /etc/bash_completion   ] && . /etc/bash_completion
+fi # }}} -- CLYDE DEFAULTS
