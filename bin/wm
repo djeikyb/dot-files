@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# Change .xinitrc and startx
+# Treats first arg as the * in *.xinitrc
+# Treats second arg as display number
+# Symlinks .xinitrc
+# Starts X on requested display
+#
+#
+# BUGS
+#
+# * Should fail if $2 isn't a number
+# * Should fail if $1.xinitrc doesn't exist
+#   (The `ls` with colour should at least warn about this)
+#
+
+#if [ -z $1 ]; then
+#    echo "No argument. Leaving .xinitrc alone."
+#    exit 0
+#fi
+
+[ -z $1 ] && echo "No argument. Leaving .xinitrc alone." && exit 0
+
+rm ~/.xinitrc
+"ln" -s ~/.xinitrc.d/$1.xinitrc ~/.xinitrc
+"ls" --color=auto -l ~/.xinitrc
+
+[ -z $2 ] && echo "No display chosen. Not starting X." && exit 1
+
+#if [ -z $2 ]; then
+#    echo "No display chosen. Not starting X."
+#    exit 1
+#fi
+
+startx -- :$2
