@@ -1,18 +1,19 @@
-#!/bin/bash
-#
+#!/bin/bash --posix
+
 # Eats file from xinitrc.d
 # Shits symlink to file from xinitrc.d
-# Eats display number
-# Shits xsession
-#
 
 xinits_path="$HOME/.config/xinitrc.d"
 [ -z $1 ] && echo "usage: wm <xinitrc> <display number>" && exit 0
 if [ -e "$xinits_path/$1.xinitrc" ]; then
-    rm ~/.xinitrc
+    [ -e $HOME/.xinitrc ] && rm $HOME/.xinitrc
     "ln" -s "$xinits_path/$1.xinitrc" "$HOME/.xinitrc"
     #"file" "$HOME/.xinitrc"
 else echo "Not found: $xinits_path/$1.xinitrc" && exit 1
 fi
+
+# Eats display number
+# Shits xsession
+
 [ -z $2 ] && exit 0
 [ $2 -gt 0 ] && startx -- :$2 || exit 1
