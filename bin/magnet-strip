@@ -1,0 +1,13 @@
+#!/bin/bash --posix
+#
+# eats: magnet link from clipboard
+# shits: infohash to clipboard
+#
+# sample magnet link:
+#
+# 
+echo -n "$(xsel -o)" \
+	| cut -b21-60 \
+	| tr -d "\n" \
+	| xsel
+
