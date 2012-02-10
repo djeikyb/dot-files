@@ -1,0 +1,71 @@
+# Make mutt's bindings as close to lynx', slrn's, and vim's as possible
+
+# move 1/2 page up/down like in vi
+bind generic \Cu    half-up
+bind generic \Cd    half-down
+bind pager   \Cu    half-up
+bind pager   \Cd    half-down
+bind generic   b    previous-page
+bind generic \Cb    previous-page
+bind generic \Cf    next-page
+bind generic   1G   first-entry
+bind generic   1g   first-entry
+bind generic <Home> first-entry
+bind generic \Ca    first-entry
+bind generic   G    last-entry
+bind generic <End>  last-entry
+bind generic \Ce    last-entry
+bind generic   g     first-entry
+
+bind pager   \eD    delete-thread
+bind pager   \eU    undelete-thread
+# ^U and ^D were bound otherwise, so bind it now again to something else
+bind pager \Ca      top
+bind pager <Home>   top
+bind pager  1G      top
+bind pager   g      top
+bind pager \Ce      bottom
+bind pager <End>    bottom
+bind pager   G      bottom
+bind pager   q      exit
+bind pager <Left>   exit
+bind pager   B      bounce-message
+bind pager   b      previous-page
+bind pager \Cb      previous-page
+bind pager \Cf      next-page
+bind pager <Insert> previous-entry
+bind pager <Delete> next-entry
+bind pager <Up>     previous-line
+bind pager <Down>   next-line
+bind pager   k      previous-line
+bind pager   j      next-line
+bind pager   R      group-reply
+bind pager   N      search-opposite
+
+bind index   K     previous-undeleted
+bind index   J     next-undeleted
+bind index   k     previous-entry
+bind index   j     next-entry
+bind index \eD     delete-thread
+bind index \eU     undelete-thread
+# ^U and ^D were bound otherwise, so bind it now again to something else
+bind index   B     bounce-message
+bind index \ef     forget-passphrase
+bind index \Cb     previous-page
+bind index \Cf     next-page
+bind index <Up>    previous-entry
+bind index <Down>  next-entry
+bind index <Right> display-message
+bind index <Home>  first-entry
+bind index <End>   last-entry
+bind index   1G    first-entry
+bind index   1g    first-entry
+bind index \Ca     first-entry
+bind index   G     last-entry
+bind index \Ce     last-entry
+bind index   g     first-entry
+bind index   R     group-reply
+
+bind alias <Tab> next-entry
+
+bind browser <Right> select-entry
