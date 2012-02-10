@@ -1,0 +1,16 @@
+set editor="/usr/bin/editor"
+set sig_dashes=no
+set sig_on_top=yes
+
+set mark_old=no # Never mark unread messages as old
+unset reply_self
+
+set mail_check=120 # Reduce polling frequency to a sane level
+set timeout=15 # And poll the current mailbox more often (not needed with IDLE)
+set net_inc=5 # Display download progress every 5K
+set imap_check_subscribed # Auto poll sub'ed mailboxes for new mail
+
+set sort = 'reverse-last-date-received'
+#set sort_aux = 'reverse-last-date-received'
+
+set resolve = no # remove cursed auto scrolling

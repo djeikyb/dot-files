@@ -1,0 +1,16 @@
+color normal white default
+color quoted brightwhite default
+color indicator brightyellow red
+color error brightgreen default
+color status brightyellow blue
+color tree magenta default # the thread tree in the index menu
+color tilde magenta default
+color message brightcyan default
+color markers brightcyan default
+color attachment brightmagenta default
+color search default green # how to hilite search patterns in the pager
+
+color header brightyellow default ^(From|Subject|Date):
+color body brightgreen default "(ftp|http)://[^ ]+" # point out URLs
+color body brightyellow default [-a-z_0-9.]+@[-a-z_0-9.]+ # e-mail addresses
+color underline brightgreen default
