@@ -1,7 +1,7 @@
 set -o vi   # vi bindings for shell
 [ -r ~/.bash_aliases ] && . $HOME/.bash_aliases
-[ "$TERM" = rxvt-256color ] && TERM='rxvt-unicode'
-[ "$TERM" = rxvt-unicode-256color ] && TERM='rxvt-unicode'
+[ "$TERM" = "rxvt-256color" ] && TERM='rxvt-unicode'
+[ "$TERM" = "rxvt-unicode-256color" ] && TERM='rxvt-unicode'
 PATH=$HOME/bin:$PATH
 HISTCONTROL=ignoreboth # ignore dups and "^ .*$"
 
@@ -63,6 +63,8 @@ fi # }}} -- UBUNTU DEFAULTS
 
 # CLYDE DEFAULTS -- {{{
 if [ "$(hostname)" = "clyde" ]; then
-    PS1='[\u@\h \w]\$ '
-    [ -r /etc/bash_completion   ] && . /etc/bash_completion
+    $PS1='\w\$ '
+    [ "$(id -u)" = "0" ] && PS1='\w\# '
+    #[ -r /etc/bash_completion   ] && . /etc/bash_completion
+    PATH=$HOME/bin/paywright:/opt/jdk/bin:$PATH
 fi # }}} -- CLYDE DEFAULTS
