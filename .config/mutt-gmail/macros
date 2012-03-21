@@ -1,1 +1,2 @@
 macro index <F1> <limit>~N<enter> 'Limit index to new messages'
+macro index <F2> <limit>all<enter> 'Limit index to new messages'

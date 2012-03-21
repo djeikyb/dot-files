@@ -9,6 +9,7 @@ alias man='man -i'
 # misc system
 alias df='"df" -h'
 alias du='"du" -bh'
+alias gmutt='mutt -F ~/.config/mutt-gmail/muttrc'
 alias ls='"ls" --color=auto -F'
 alias pdf='"apvlv"'
 alias pgrep='pgrep -fl'
@@ -30,7 +31,6 @@ case "$(hostname)" in
         alias mutt='mutt -F ~/.config/mutt/muttrc'
         alias mm="mmutter"
         alias mmutter='mutt -F ~/.config/mmutter/muttrc'
-        alias gmutt='mutt -F ~/.config/mutt-gmail/muttrc'
         #alias play='plaiter'
         alias plait='plait -l'
         alias xterm='xterm -fa inconsolata -geometry 106x43'
