@@ -64,7 +64,9 @@ fi # }}} -- UBUNTU DEFAULTS
 # CLYDE DEFAULTS -- {{{
 if [ "$(hostname)" = "clyde" ]; then
     PS1='\w\$ '
-    [ "$(id -u)" = "0" ] && PS1='\w# '
-    #[ -r /etc/bash_completion   ] && . /etc/bash_completion
+    if [ "$(id -u)" = "0" ]; then
+        PS1='\w# '
+        [ -r /etc/bash_completion   ] && . /etc/bash_completion
+    fi
     PATH=$HOME/bin/paywright:/opt/jdk/bin:$PATH
 fi # }}} -- CLYDE DEFAULTS
