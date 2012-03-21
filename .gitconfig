@@ -5,3 +5,5 @@
     logg = log --pretty=oneline
     stat = status --short --branch --untracked-files=no
     sta = status --short --branch --untracked-files=no
+[color]
+	ui = auto
