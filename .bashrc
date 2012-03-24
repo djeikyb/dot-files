@@ -71,8 +71,7 @@ fi # }}} -- UBUNTU DEFAULTS
 if [ "$(hostname)" = "clyde" ]; then
     PS1="${bldcyn}${bakblu}\w${txtrst} "
     if [ "$(id -u)" = "0" ]; then
-        PS1='\w# '
-        #PS1="${txtylw}${bakred}\w${txtrst} "
+        PS1="${txtylw}${bakred}\w${txtrst}# "
         [ -r /etc/bash_completion   ] && . /etc/bash_completion
     fi
     PATH=$HOME/bin/paywright:/opt/jdk/bin:$PATH
