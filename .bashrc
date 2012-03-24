@@ -9,11 +9,17 @@ HISTCONTROL=ignoreboth # ignore dups and "^ .*$"
 
 # UBUNTU DEFAULTS -- {{{
 if [ "$(hostname)" = "daedalus" ]; then
-    export EDITOR="/usr/bin/editor"
+    export EDITOR="/usr/bin/vim.basic"
     export VISUAL="$EDITOR"
 #
 #    # If not running interactively, don't do anything
     [ -z "$PS1" ] && return
+    PS1="${txtylw}\h ${txtcyn}\w${txtylw}\$${txtrst} "
+    if [ "$(id -u)" = "0" ]; then
+        #PS1="${txtred}\h${txtrst} \w\# "
+        PS1="\h \w\# "
+        [ -r /etc/bash_completion   ] && . /etc/bash_completion
+    fi
 #
 #    # check the window size after each command and, if necessary,
 #    # update the values of LINES and COLUMNS.
