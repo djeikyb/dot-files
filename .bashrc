@@ -17,8 +17,8 @@ if [ "$(hostname)" = "daedalus" ]; then
     PS1="${txtylw}\h ${txtcyn}\w${txtylw}\$${txtrst} "
     if [ "$(id -u)" = "0" ]; then
         #PS1="${txtred}\h${txtrst} \w\# "
-        PS1="\h \w\# "
-        [ -r /etc/bash_completion   ] && . /etc/bash_completion
+        PS1="${txtylw}${bakred}\h${txtylw} \w ${bldred}#${txtrst} "
+        #[ -r /etc/bash_completion   ] && . /etc/bash_completion
     fi
 #
 #    # check the window size after each command and, if necessary,
