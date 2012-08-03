@@ -1,0 +1,30 @@
+set query_command="/usr/bin/env lbdbq"
+set editor = "/usr/bin/env vim"
+set sig_dashes = yes
+set sig_on_top = yes
+
+set mark_old = no   # Never mark unread messages as old
+unset reply_self
+
+set mail_check = 120      # Reduce polling frequency to a sane level
+set timeout = 15          # And poll current mailbox often (not needed with IDLE)
+set net_inc = 5           # Display download progress every 5K
+set imap_check_subscribed # Auto poll sub'ed mailboxes for new mail
+
+#set header_cache_pagesize=64000 # Supposed optimum is 32k
+
+set move=no # Stop "move read messages to mbox"
+alternative_order text/plain text/html application/pdf application/ps
+auto_view text/html
+
+set imap_keepalive=200
+set sort = 'reverse-last-date-received'
+#set sort_aux = 'reverse-last-date-received'
+
+set resolve = no # remove cursed auto scrolling
+
+source ~/.config/mutt/aliases
+source ~/.config/mutt/bindings
+source ~/.config/mutt/colours
+source ~/.config/mutt/macros
+#source ~/.config/mutt-gw/hooks

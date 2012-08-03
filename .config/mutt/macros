@@ -1,0 +1,8 @@
+# common folders
+macro index <F1> <change-folder>$spoolfile<enter> 'Goto inbox'
+#macro index <F2> <change-folder>$record<enter> 'Goto sent items'
+## reserve f3 and f4 for per-muttrc folder changes
+
+# search toggles
+macro index <F5> <limit>~N<enter> 'Limit index to new messages'
+macro index <F12> <limit>all<enter> 'Unlimit index'
