@@ -9,7 +9,7 @@ alias man='man -i'
 # misc system
 alias df='"df" -h'
 alias du='"du" -bh'
-alias gmutt='mutt -F ~/.config/mutt-gmail/muttrc'
+alias gmutt='mutt -F ~/.config/mutt/jace.muttrc'
 alias ls='"ls" --color=auto -F'
 alias pdf='"apvlv"'
 alias pgrep='pgrep -fl'
