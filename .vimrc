@@ -25,6 +25,7 @@ set fdm=marker          " use fold markers ie {{{ }}}
 " Colours
 set background=dark
 colorscheme zenburn
+hi MatchParen cterm=underline,bold ctermbg=none ctermfg=none
 
 " show invisibles:
 set list
@@ -36,11 +37,15 @@ set softtabstop=4       " (sts) Turned off with 0
 set shiftwidth=4        " (sw)  Used for autoindent, and << and >>
 set expandtab           " (et)  Expand tabs to spaces
 
+autocmd filetype java setlocal ts=2 sts=2 sw=2 expandtab
+
 " GVIM settings
 set guioptions-=T        " Disable toolbar
 set guioptions-=m        " Disable file menu
+set guifont=M+\ 2m\ Medium\ 12
 
 syntax on
+au FileType java setl fo+=cro " enable auto comments for java
 "au FileType * setl fo+=cro " enable auto comments
 "hi Comment ctermfg=blue	" make comments blue
 
